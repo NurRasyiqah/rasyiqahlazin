@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('MyCustomFont.ttf') format('truetype');
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        body {
+            background: black;
+            color: rgb(235, 224, 224);
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 20px;
+        }
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        .highlight {
+            font-family: 'MyCustomFont', sans-serif;
+            text-decoration: underline;
+            background-color: rgb(54, 74, 151);
+            padding: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: rgb(96, 74, 158);
+            color: rgb(236, 223, 223);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-family: 'MyCustomFont', sans-serif;
+            margin-top: 20px;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .icon-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="images/Galaxy Motion Background Video [HD] ~ FREE.mp4" type="video/mp4">
+    </video>
+    <div style="display: flex; align-items: center;">
+        <img src="images/photo2.jpg" alt="Your Photo" style="border-radius: 80%; width: 200px; height: 200px;">
+    </div>
+    <div class="section">
+        <div class="highlight">About Me</div>
+        <p>Hello! My name is Nur Rasyiqah. I am 21 years old and a student in UITM Rembau. I am pursuing a degree in information management (Hons.) and library management. 
+            In my free time, I like to do outdoor activities such as hiking and camping. I also love food. I always go food hunting. 
+            I'm always eager to learn new skills and take on new challenges. I will do a part-time job during the semester break 
+            to gain work experience. Feel free to reach out if you'd like to connect!</p>
+        <div class="highlight">Contact Me</div>
+        <div class="icon-container">
+            <a href="https://www.instagram.com/ras_yiq_h0_0?igsh=MWUyNDJkOWc5NHRsZA==">
+                <img class="icon" src="images/social-instagram-new-circle-512.webp" alt="instagram">
+            </a>
+            <a href="mailto:rasyiqahnur60@gmail.com">
+                <img class="icon" src="images/gmail.png" alt="Email">
+            </a>
+        </div>
+    </div>
+    
+         <div>
+    </div>
+
+    <footer>
+        <p>&copy;<b>NUR RASYIQAH 2024, MADE FOR IML470 ASSIGNMENT,2024.</b></p></footer>
+
+    <button class="button" onclick="location.href='try.html'">Previous</button>
+    <button class="button" onclick="location.href='hiking.html'">Next Page</button>
+    
+</body>
+</html>
